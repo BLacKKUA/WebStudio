@@ -416,7 +416,7 @@
             </div>
             <label for="user-email" class="text-label-form">Почта</label>
             <div class="thumb-user-name">
-               <input type="email" name="user-email" class="modal-input">
+               <input type="email" name="user-email" class="modal-input" id="user-email">
                <svg class="form-user-icon">
                   <use href="images/icons.svg#icon-email-form"></use>
                </svg>
@@ -426,14 +426,13 @@
                id="user-comments"></textarea>
             <label for="modal-checkbox" class="modal-checkbox"><input type="checkbox" class="checkbox"
                   name="modal-checkbox" id="modal-checkbox">
-               <span class="checkbox-icon"></span>
-               <p class="checkbox-text">
-                  Соглашаюсь с рассылкой и принимаю
+               <span class="checkbox-icon"> </span>
+               <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
                   <span class="conditions-contract">
                      <a href="#" class="link-contract">
                         Условия
                         договора</a></span>
-               </p>
+               </span>
             </label>
             <button type="submit" class="button-submit">Отправить</button>
          </form>
