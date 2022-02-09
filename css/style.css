@@ -648,8 +648,9 @@ ul {
    margin-top: 4px;
    outline: none;
 }
-
-.modal-input:hover,
+.modal-input:focus + .form-user-icon {
+   fill: var(--main-color);
+}
 .modal-input:focus {
    border: 1px solid var(--main-color);
 }
@@ -669,7 +670,6 @@ ul {
    resize: none;
    cursor: pointer;
 }
-.modal-textarea:hover,
 .modal-textarea:focus {
    border: 1px solid var(--main-color);
 }
@@ -745,10 +745,6 @@ ul {
    width: 18px;
    pointer-events: none;
    fill: inherit;
-}
-.thumb-user-name:hover,
-.thumb-user-name:focus {
-   fill: var(--main-color);
 }
 .subscription-email {
    margin-left: 93px;
