@@ -394,7 +394,7 @@
    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
          <button type="button" class="modal-close-btn" data-modal-close>
-            <svg>
+            <svg class="close-btn">
                <use href="images/icons.svg#icon-X"></use>
             </svg>
          </button>
@@ -402,21 +402,21 @@
          <form class="modal-form">
             <label for="user-name" class="text-label-form">Имя</label>
             <div class="thumb-user-name">
-               <input type="text" name="user-name" class="modal-input" id="user-name" requared>
+               <input type="text" name="user-name" class="modal-input" id="user-name">
                <svg class="form-user-icon">
                   <use href="images/icons.svg#icon-user"></use>
                </svg>
             </div>
             <label for="user-tel" class="text-label-form">Телефон</label>
             <div class="thumb-user-name">
-               <input type="tel" name="user-tel" class="modal-input" id="user-tel" requared>
+               <input type="tel" name="user-tel" class="modal-input" id="user-tel">
                <svg class="form-user-icon">
                   <use href="images/icons.svg#icon-phone-form"></use>
                </svg>
             </div>
             <label for="user-email" class="text-label-form">Почта</label>
             <div class="thumb-user-name">
-               <input type="email" name="user-email" class="modal-input" requared>
+               <input type="email" name="user-email" class="modal-input">
                <svg class="form-user-icon">
                   <use href="images/icons.svg#icon-email-form"></use>
                </svg>
@@ -435,9 +435,7 @@
                         договора</a></span>
                </p>
             </label>
-            <div class="thumb-button">
-               <button type="submit" class="button-submit">Отправить</button>
-            </div>
+            <button type="submit" class="button-submit">Отправить</button>
          </form>
       </div>
    </div>
