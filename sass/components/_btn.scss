@@ -1,0 +1,65 @@
+.button-style {
+   font-family: inherit;
+   width: 200px;
+   padding: 10px 0;
+   background-color: var(--main-color);
+   border: none;
+   border-radius: 5px;
+   color: var(--background-color);
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.875;
+   letter-spacing: 0.06em;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button-submit {
+   padding: 10px 55px;
+   background: #188ce8;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   border: none;
+   letter-spacing: 0.06em;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 30px;
+   color: #ffffff;
+   margin: 0 auto;
+}
+.subscription-button {
+   width: 200px;
+   height: 50px;
+   background: #2196f3;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   border: none;
+   margin-right: 12px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 30px;
+   letter-spacing: 0.06em;
+   color: #ffffff;
+   align-items: center;
+   text-align: center;
+}
+.modal-close-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   position: absolute;
+   background-color: #fff;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   top: 14px;
+   right: 14px;
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+   fill: var(--main-color);
+}
+
+.close-btn {
+   height: 30px;
+   width: 30px;
+}
