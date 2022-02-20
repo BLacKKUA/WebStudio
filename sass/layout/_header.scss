@@ -66,7 +66,7 @@
 }
 .a-nostyle {
    &:hover,
-   &focus {
+   &:focus {
       color: var(--main-color);
    }
 }
@@ -96,4 +96,15 @@
    width: 12px;
    fill: currentColor;
    margin-right: 5px;
+}
+
+// Portfolio
+.portfolio-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+}
+.portfolio-nav li {
+   margin: 0 4px 0 4px;
 }
