@@ -1,16 +1,31 @@
 .partners-list {
    list-style: none;
    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 .partners-list__item {
-   width: 170px;
+   width: calc(100% / 2 - 30px);
    height: 92px;
-   box-sizing: border-box;
    margin-right: 30px;
-   &:last-child {
-      margin-right: 0px;
+   margin-bottom: 30px;
+
+   &:nth-child(2n) {
+      @media screen and (max-width: 767px) {
+         margin-right: 0px;
+      }
+   }
+   &:nth-child(1n + 5) {
+      @media screen and (max-width: 767px) {
+         margin-bottom: 0px;
+      }
+   }
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc(100% / 3 - 30px);
    }
 }
+
 .partners-list__url {
    display: flex;
    justify-content: center;
