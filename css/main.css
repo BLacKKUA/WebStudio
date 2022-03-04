@@ -1068,17 +1068,6 @@ summary {
   position: relative;
 }
 
-.active::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  background-color: var(--main-color);
-  border-radius: 2px;
-  left: 0;
-  bottom: -27px;
-}
-
 .contact-list__icon--letter {
   height: 12px;
   width: 16px;
