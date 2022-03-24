@@ -1,11 +1,12 @@
 .head {
    border-bottom: 1px solid #ececec;
    padding: 16px 0;
-
-   // & > .container {
-   //    display: flex;
-   //    align-items: center;
-   // }
+   @media screen and (min-width: 1200px) {
+      & > .container {
+         display: flex;
+         align-items: center;
+      }
+   }
 }
 .menu {
    display: flex;
@@ -23,7 +24,7 @@
    &:focus {
       fill: var(--main-color);
    }
-   @media screen and (min-width: 768px) and (max-width: 1200px) {
+   @media screen and (min-width: 768px) {
       display: none;
    }
 }
@@ -80,10 +81,13 @@
    @media screen and (min-width: 768px) and (max-width: 1200px) {
       display: flex;
       margin-left: 0;
+      &:last-child {
+         margin-left: auto;
+      }
    }
-
-   &:last-child {
-      margin-left: auto;
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: 93px;
    }
 }
 .a-nostyle {
@@ -130,9 +134,10 @@
    flex-direction: row;
    align-items: flex-start;
    align-content: space-between;
-   @media screen and (min-width: 768px) and (max-width: 1200px) {
+   @media screen and (min-width: 768px) {
       display: none;
    }
+   z-index: 1;
 }
 .head__span {
    color: var(--main-color);
@@ -209,16 +214,19 @@
    position: relative;
 }
 
-// .active::after {
-//    content: '';
-//    width: 100%;
-//    height: 4px;
-//    position: absolute;
-//    background-color: var(--main-color);
-//    border-radius: 2px;
-//    left: 0;
-//    bottom: -27px;
-// }
+.active::after {
+   content: '';
+   width: 100%;
+   height: 4px;
+   position: absolute;
+   background-color: var(--main-color);
+   border-radius: 2px;
+   left: 0;
+   bottom: -27px;
+   @media screen and (min-width: 1200px) {
+      bottom: -22px;
+   }
+}
 .contact-list__icon--letter {
    height: 12px;
    width: 16px;
@@ -232,13 +240,29 @@
    margin-right: 5px;
 }
 
-// // Portfolio
-// .portfolio-nav {
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    list-style: none;
-// }
-// .portfolio-nav li {
-//    margin: 0 4px 0 4px;
-// }
+// Portfolio
+.portfolio-nav {
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin-bottom: 0;
+   }
+   display: flex;
+   list-style: none;
+   flex-wrap: wrap;
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin-bottom: 0;
+   }
+}
+.portfolio-nav li {
+   margin: 0 4px 15px 4px;
+   @media screen and (min-width: 1200px) {
+      margin: 0 4px 0 4px;
+   }
+}

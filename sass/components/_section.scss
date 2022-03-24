@@ -3,6 +3,9 @@
 }
 .section-padding:nth-child(3) {
    display: none;
+   @media screen and (min-width: 1200px) {
+      display: block;
+   }
 }
 .section:nth-child(3) {
    padding: 0 0 94px 0;

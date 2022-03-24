@@ -11,12 +11,13 @@
    border-left: 1px solid #eeeeee;
 }
 .project-list__item {
-   width: 370px;
-   margin: 0 0 30px 30px;
+   // width: 370px;
+   width: calc(100% / 1 - 60px);
+   // margin: 0 0 30px 30px;
 
-   &:nth-child(3n + 1) {
-      margin: 0 0 30px 0;
-   }
+   // &:nth-child(3n + 1) {
+   //    margin: 0 0 30px 0;
+   // }
 }
 .projec-items {
    padding-bottom: 94px;

@@ -10,6 +10,9 @@
    @media screen and (min-width: 768px) and (max-width: 1199px) {
       text-align: left;
    }
+   @media screen and (min-width: 1200px) {
+      text-align: left;
+   }
 }
 .section-padding__title {
    text-align: center;
@@ -44,4 +47,14 @@
    line-height: 2;
    letter-spacing: 0.04em;
    color: var(--text-color);
+}
+.hero__sentences {
+   font-size: 26px;
+   color: var(--background-color);
+   font-weight: 900;
+   line-height: 1.62;
+   text-transform: uppercase;
+   text-align: center;
+   margin: 0 0 30px 0;
+   letter-spacing: 0.06em;
 }
