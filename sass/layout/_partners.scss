@@ -23,9 +23,16 @@
    }
    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc(100% / 3 - 30px);
+      &:nth-child(3n + 3) {
+         margin-right: 0;
+      }
+      &:nth-child(1n + 4) {
+         margin-bottom: 0;
+      }
    }
    @media screen and (min-width: 1200px) {
       width: calc(100% / 6 - 30px);
+      margin-bottom: 0;
       &:last-child {
          margin-right: 0;
       }

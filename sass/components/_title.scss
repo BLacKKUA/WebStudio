@@ -47,11 +47,12 @@
    line-height: 2;
    letter-spacing: 0.04em;
    color: var(--text-color);
-   @media screen and (min-width: 767px) {
+   @media screen and (min-width: 767px) and (max-width: 1200px) {
       letter-spacing: 0.06em;
    }
 }
 .hero__sentences {
+   font-family: Roboto, sans-serif;
    font-size: 26px;
    color: var(--background-color);
    font-weight: 900;

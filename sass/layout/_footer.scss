@@ -19,7 +19,6 @@
 .footer-list {
    list-style: none;
    padding: 0;
-   margin-bottom: 60px;
 }
 .footer-address {
    text-decoration: none;
@@ -45,7 +44,9 @@
    text-align: center;
    @media screen and (min-width: 1200px) {
       text-align: left;
+      margin-bottom: 0px;
    }
+   margin-bottom: 60px;
 }
 .social-subscription {
    @media screen and (min-width: 1200px) {
