@@ -161,9 +161,24 @@
             <h2 class="section-padding__title">Наша команда</h2>
             <ul class="teammates flex-row">
                <li class="teammates__item">
-                  <img srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x" src="./images/igor.jpg"
-                     alt="фото Игорь Демьяненко" class="teammates__ava" />
-                  <div class="block-information">
+                  <!-- <img srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x" src="./images/igor.jpg"
+                     alt="фото Игорь Демьяненко" class="teammates__ava" /> -->
+                  <picture>
+                     <source srcset="
+                     ./images/img-desktop-1.jpg 1x, 
+                     ./images/img-desktop-1@2x.jpg 2x
+                     " media="(min-width: 1200px)">
+                     <source srcset="
+                     ./images/img-table1.jpg 1x, 
+                     ./images/img-table1@2x.jpg 2x
+                     " media="(min-width: 768px)">
+                     <source srcset="
+                     ./images/img-mob1.jpg 1x, 
+                     ./images/img-mob1@2x.jpg 2x
+                     " media="(min-width: 480px)">
+                     <img src="./images/img-desktop-1.jpg" alt="Игорь Демьяненко" class="teammates__ava">
+                  </picture>
+                  <div class=" block-information">
                      <h3 class="block-information__name">Игорь Демьяненко</h3>
                      <p class="block-information__career">Product Designer</p>
                      <ul class="social-icons">
@@ -199,8 +214,21 @@
                   </div>
                </li>
                <li class="teammates__item">
-                  <img srcset="./images/img-1.jpg 1x, ./images/img-12x.jpg 2x" src="./images/img-1.jpg"
-                     alt="фото Ольга Репина" class="teammates__ava" />
+                  <picture>
+                     <source srcset="
+                        ./images/img-desktop.jpg 1x, 
+                        ./images/img-desktop2x.jpg 2x
+                        " media="(min-width: 1200px)">
+                     <source srcset="
+                        ./images/img-tablet.jpg 1x, 
+                        ./images/img-tablet2x.jpg 2x
+                        " media="(min-width: 768px)">
+                     <source srcset="
+                        ./images/img-mob.jpg 1x, 
+                        ./images/img-mob2x.jpg 2x
+                        " media="(min-width: 480px)">
+                     <img src="./images/img-desktop.jpg" alt="Ольга Репина" class="teammates__ava">
+                  </picture>
                   <div class="block-information">
                      <h3 class="block-information__name">Ольга Репина</h3>
                      <p class="block-information__career">Frontend Developer</p>
@@ -237,8 +265,21 @@
                   </div>
                </li>
                <li class="teammates__item">
-                  <img srcset="./images/img-2.jpg 1x, ./images/img-22x.jpg 2x" src="./images/img-2.jpg"
-                     alt="фото Николай Тарасов" class="teammates__ava" />
+                  <picture>
+                     <source srcset="
+                        ./images/img-3-desktop.jpg 1x, 
+                        ./images/img-3-desktop2x.jpg 2x
+                        " media="(min-width: 1200px)">
+                     <source srcset="
+                        ./images/img-3-tablet.jpg 1x, 
+                        ./images/img-3-tablet2x.jpg 2x
+                        " media="(min-width: 768px)">
+                     <source srcset="
+                        ./images/img-3-mob.jpg 1x, 
+                        ./images/img-3-mob2x.jpg 2x
+                        " media="(min-width: 480px)">
+                     <img src="./images/img-3-desktop.jpg" alt="Николай Тарасов" class="teammates__ava">
+                  </picture>
                   <div class="block-information">
                      <h3 class="block-information__name">Николай Тарасов</h3>
                      <p class="block-information__career">Marketing</p>
@@ -275,8 +316,21 @@
                   </div>
                </li>
                <li class="teammates__item">
-                  <img srcset="./images/img-3.jpg 1x, ./images/img-32x.jpg 2x" src="./images/img-3.jpg"
-                     alt="фото Михаил Ермаков" class="teammates__ava" />
+                  <picture>
+                     <source srcset="
+                        ./images/img-4-desktop.jpg 1x, 
+                        ./images/img-4-desktop2x.jpg 2x
+                        " media="(min-width: 1200px)">
+                     <source srcset="
+                        ./images/img-4-tablet.jpg 1x, 
+                        ./images/img-4-tablet2x.jpg 2x
+                        " media="(min-width: 768px)">
+                     <source srcset="
+                        ./images/img-4-mob.jpg 1x, 
+                        ./images/img-4-mob2x.jpg 2x
+                        " media="(min-width: 480px)">
+                     <img src="./images/img-4-desktop.jpg" alt="Михаил Ермаков" class="teammates__ava">
+                  </picture>
                   <div class="block-information">
                      <h3 class="block-information__name">Михаил Ермаков</h3>
                      <p class="block-information__career">UI Designer</p>

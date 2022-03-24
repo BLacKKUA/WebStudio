@@ -523,6 +523,9 @@ summary {
   .flex-row__item:nth-child(2n + 2) {
     margin-right: 0;
   }
+  .flex-row__item:nth-child(1n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -652,6 +655,12 @@ summary {
 }
 
 @media screen and (min-width: 1200px) {
+  .flex-row__text {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .flex-row__text {
     margin-bottom: 0;
   }
