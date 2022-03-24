@@ -5,8 +5,11 @@
    list-style: none;
    margin: 34px 0 0 0;
 
-   @media screen and (min-width: 767px) {
-      justify-content: start;
+   @media screen and (min-width: 768px) and (max-width: 1200px) {
+      justify-content: center;
+      &:last-child {
+         justify-content: start;
+      }
    }
 }
 .container-items {
@@ -23,7 +26,7 @@
    }
    @media screen and (min-width: 768px) and (max-width: 1200px) {
       width: 334px;
-      height: 440px;
+      // height: 440px;
       margin: 0 30px 30px 0;
       &:nth-child(2n + 2) {
          margin-right: 0;
