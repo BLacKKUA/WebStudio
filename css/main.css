@@ -973,6 +973,7 @@ summary {
 
 .mob-menu-list {
   list-style: none;
+  width: 100%;
 }
 
 .social-url {
